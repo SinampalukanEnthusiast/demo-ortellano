@@ -8,27 +8,29 @@
 
 @layer base {
   .btn {
-    @apply px-3 py-2 rounded-lg;
+    @apply p-2 xl:rounded-lg sm:rounded-md rounded-sm;
   }
   .btn-success {
     @apply bg-green-700 border border-green-700;
   }
 
   .btn-transparent {
-    @apply hover:border hover:border-white;
+    @apply hover:border hover:border-white xl:p-3 lg:p-2 md:p-2 sm:p-2 px-1 py-0;
   }
 
   .btn-lg {
-    @apply text-4xl;
+    @apply xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg;
   }
 
-  .btn-translate {
+  .btn-scale {
     @apply hover:scale-110 transition;
   }
   .btn-landing {
-    @apply py-4 px-8 mt-2 hover:bg-transparent  hover:text-white text-4xl transition delay-150;
+    @apply xl:text-4xl lg:text-2xl md:text-xl sm:text-lg text-sm 
+    xl:py-4 xl:px-8 lg:py-3 lg:px-6 md:py-2 md:px-4 sm:py-2 sm:px-4 mt-2 
+    hover:bg-green-custom hover:text-white transition delay-100;
   }
-  .bg-gradient {
-    @apply bg-green-700 z-50;
+  .btn-ort {
+    @apply bg-white text-green-custom  xl:rounded-2xl lg:rounded-xl md:rounded-lg sm:rounded-md rounded-md;
   }
 }

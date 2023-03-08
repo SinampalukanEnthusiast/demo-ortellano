@@ -7,7 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {},
+      colors: {
+        green: {
+          custom: "#08706B",
+        },
+      },
     },
   },
   plugins: [],

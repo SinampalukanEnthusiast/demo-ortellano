@@ -8,7 +8,7 @@ export default function Landing(params) {
   return (
     <div>
       <Hero />
-      <h1 className="text-8xl">EXTRA STUF</h1>
+      <h1 className="text-8xl ml-5">hi</h1>
     </div>
   );
 }
